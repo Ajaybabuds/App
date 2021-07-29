@@ -8,7 +8,6 @@ st.title("INVENTORY AND SALES ANALYSIS OF SCMS")
 df = pd.read_csv("https://raw.githubusercontent.com/Ajaybabuds/App/main/COGS1.csv", sep=',', engine='python')
 df = df.drop([0])
 x = df.columns
-print(x)
 col1, col2, col3 = st.beta_columns(3)
 with col1:
     item = st.selectbox("Select an Item", options=df[x[0]].values)
